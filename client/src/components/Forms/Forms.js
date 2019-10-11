@@ -68,10 +68,7 @@ export default class Forms extends Component {
           <Col md={6}>
             <FormGroup>
               <Label for="exampleCity" className="title">City</Label>
-
               <Input type="text" name="startPointCity" onChange={this.handleInputChange} id="exampleCity" />
-
-            
             </FormGroup>
           </Col>
           <Col md={2}>

@@ -52,7 +52,7 @@ export default class Forms extends Component {
             <FormGroup className="name">
               <Label for="exampleTrip" className="title">Trip Name</Label>
 
-              <Input type="text" name="tripName" onChange={this.handleInputChange} id="exampleTrip" placeholder="Your Trip Name:"/>
+              <Input type="text" name="tripName" onChange={this.handleInputChange} id="exampleTrip" placeholder="Your Trip Name:" required="true"/>
 
             </FormGroup>
           </Col>
@@ -60,7 +60,7 @@ export default class Forms extends Component {
         <FormGroup>
           <Label for="exampleStart" className="title">Start Point</Label>
 
-          <Input type="text" name="startPoint" onChange={this.handleInputChange} id="exampleStart" placeholder="1234 Main St"/>
+          <Input type="text" name="startPoint" onChange={this.handleInputChange} id="exampleStart" placeholder="1234 Main St" required="true"/>
 
          
         </FormGroup>
@@ -69,7 +69,7 @@ export default class Forms extends Component {
             <FormGroup>
               <Label for="exampleCity" className="title">City</Label>
 
-              <Input type="text" name="startPointCity" onChange={this.handleInputChange} id="exampleCity" />
+              <Input type="text" name="startPointCity" onChange={this.handleInputChange} id="exampleCity" required="true"/>
 
             
             </FormGroup>
@@ -77,7 +77,7 @@ export default class Forms extends Component {
           <Col md={2}>
             <FormGroup>
               <Label for="exampleState" className="title">State</Label>
-              <Input type="text" name="startPointState" onChange={this.handleInputChange} id="exampleState" />
+              <Input type="text" name="startPointState" onChange={this.handleInputChange} id="exampleState" required="true" />
             </FormGroup>
           </Col>
           <Col md={4}>
@@ -89,25 +89,25 @@ export default class Forms extends Component {
         </Row>
         <FormGroup>
           <Label for="exampleEnd" className="title">End Point</Label>
-          <Input type="text" name="endPoint" onChange={this.handleInputChange} id="exampleEnd" placeholder="4567 Main St" />
+          <Input type="text" name="endPoint" onChange={this.handleInputChange} id="exampleEnd" placeholder="4567 Main St" required="true"/>
         </FormGroup>
         <Row form>
           <Col md={6}>
             <FormGroup>
               <Label for="exampleEndCity" className="title">City</Label>
-              <Input type="text" name="endPointCity" onChange={this.handleInputChange} id="exampleCity" />
+              <Input type="text" name="endPointCity" onChange={this.handleInputChange} id="exampleCity" required="true"/>
             </FormGroup>
           </Col>
           <Col md={2}>
             <FormGroup>
               <Label for="exampleEndState" className="title">State</Label>
-              <Input type="text" name="endPointState" onChange={this.handleInputChange} id="exampleState" />
+              <Input type="text" name="endPointState" onChange={this.handleInputChange} id="exampleState" required="true"/>
             </FormGroup>
           </Col>
           <Col md={4}>
             <FormGroup>
               <Label for="exampleEndZip" className="title">Zip</Label>
-              <Input type="text" name="endPointZip" onChange={this.handleInputChange} id="exampleZip" />
+              <Input type="text" name="endPointZip" onChange={this.handleInputChange} placeholder="Optional" id="exampleZip" />
             </FormGroup>  
           </Col>
         </Row>
@@ -115,7 +115,7 @@ export default class Forms extends Component {
           <Col md={4}>
             <FormGroup>
               <Label for="exampleStops"className="title">Stops</Label>
-              <Input onChange={this.handleInputChange} type="number" name="numberOfStops" id="exampleStops"/>
+              <Input onChange={this.handleInputChange} type="number" name="numberOfStops" placeholder="Optional" id="exampleStops"/>
             </FormGroup>
           </Col>
         </Row>

@@ -11,6 +11,15 @@ var sequelize = require("sequelize");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
+// These lines added to address CORS errors when map client site is calling our API's remotely
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", '*');
+  res.header("Access-Control-Allow-Credentials", true);
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+  res.header("Access-Control-Allow-Headers", 'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json');
+  next();
+});
+
 // Requiring our models for syncing
 var db = require("./models");
 
